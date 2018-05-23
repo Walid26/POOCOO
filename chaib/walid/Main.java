@@ -22,6 +22,7 @@ public class Main {
                 System.out.println("Enter a missile coordinate : ");
                 missileCoordinates = scan.nextLine();
         }
+            newRound();
         System.out.println("Winner : " + game.getWinner().getName());
         scan.close();
     }
