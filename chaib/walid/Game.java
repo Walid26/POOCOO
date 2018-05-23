@@ -102,15 +102,15 @@ public class Game {
     }
 
     public boolean newRound() {
-        boolean isNew = false;
+        boolean isNewRound = false;
         if (player2.getIsPlaying()) {
-            //nbRounds++;
-            //isNew = true;
+            nbRounds++;
+            isNewRound = true;
         }
         player1.updateAvailableShips();
         player2.updateAvailableShips();
         swapRoles();
         nbRounds++;
-        return true;
+        return isNewRound;
     }
 }
